@@ -29,6 +29,13 @@ const multiLabelData = [
 ];
 // ...
 
+
+```js
+<ResponsiveTable columnsCustomization={multiLabel} dataSource={multiLabelData} />
+```js
+
+ScreenShots: (https://drive.google.com/file/d/1NxppBvU9vgjIULvEw6IDIJoo8uzfEYj8/view?usp=sharing)
+
 ### Types
 
 #### `NetInfoState`
@@ -41,10 +48,6 @@ Describes the current state of the network. It is an object with these propertie
 | `isInternetReachable` | `boolean`, `null`                             | If the internet is reachable with the currently active network connection. If unknown defaults to `null`                         |
 | `isWifiEnabled`       | `boolean`                               | *(Android only)* Whether the device's WiFi is ON or OFF.                                           |
 | `details`             |                                         | The value depends on the `type` value. See below. 
-
-<ResponsiveTable columnsCustomization={multiLabel} dataSource={multiLabelData} />
-
-ScreenShots: (https://drive.google.com/file/d/1NxppBvU9vgjIULvEw6IDIJoo8uzfEYj8/view?usp=sharing)
 
 ## Contributing
 
