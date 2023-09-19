@@ -2,14 +2,17 @@
   "name": "rn-fully-responsive-table",
   "version": "0.1.0",
   "description": "Fully Responsive grid-table for react-native",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
-  "react-native": "src/index",
-  "source": "src/index",
+  "main": "lib\\commonjs\\index.js",
+  "module": "lib\\module\\index.js",
+  "types": "lib\\typescript\\src\\index.d.ts",
+  "react-native": "src\\index.tsx",
+  "source": "src\\index.tsx",
   "files": [
     "src",
     "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
     "android",
     "ios",
     "cpp",
@@ -21,9 +24,6 @@
     "!android/gradlew",
     "!android/gradlew.bat",
     "!android/local.properties",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
     "!**/.*"
   ],
   "scripts": {
@@ -33,14 +33,18 @@
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn install"
+    "bootstrap": "yarn example && yarn install",
+    "prepare": "bob build"
   },
   "keywords": [
     "react-native",
     "ios",
     "android"
   ],
-  "repository": "https://github.com/atakanimo/rn-fully-responsive-table",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atakanimo/rn-fully-responsive-table.git"
+  },
   "author": "AtakanAtabeyoglu <atabeyogluatakan@gmail.com> (https://github.com/atakanimo)",
   "license": "MIT",
   "bugs": {
@@ -68,7 +72,7 @@
     "prettier": "^2.0.5",
     "react": "18.2.0",
     "react-native": "0.72.4",
-    "react-native-builder-bob": "^0.20.0",
+    "react-native-builder-bob": "^0.22.0",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -148,12 +152,10 @@
     "targets": [
       "commonjs",
       "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "typescript"
     ]
+  },
+  "directories": {
+    "example": "example"
   }
 }
