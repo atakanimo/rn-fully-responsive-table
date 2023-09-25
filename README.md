@@ -43,10 +43,6 @@ const multiHeaderData = [
 
 ![Alt text](ss/SampleTables.png)
 
-#### `headerTextStyle`: HeaderTextStyle => Header texts styles
-
-#### `inlineItemStyle`: InlineItemStyle => Values text styles
-
 ## Types
 
 Some properties have multiple types.
@@ -64,6 +60,7 @@ Properties marked with an asterisk (`*`) are required.
 | `headerWrapperStyle` | `ViewStyle` | Header Container styles. |
 | `headerTextStyle` | `HeaderTextStyle` | Header texts styles. |
 | `inlineItemStyle` | `InlineItemStyle` | Values text styles |
+
 
 ```js
 type columnProperties = {
