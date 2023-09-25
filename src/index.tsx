@@ -1,19 +1,19 @@
 import ResponsiveTable from './ReponsiveTable';
 import {
-  customizedMultiLabel,
-  customizedMultiLabelItem,
-  multiLabel,
-  multiLabelData,
-  singleLabel,
-  singleLabelData,
+  customizedMultiHeader,
+  customizedMultiHeaderItem,
+  multiHeader,
+  multiHeaderData,
+  singleHeader,
+  singleHeaderData,
 } from './mock';
 
 export {
   ResponsiveTable,
-  customizedMultiLabel,
-  customizedMultiLabelItem,
-  multiLabel,
-  singleLabel,
-  multiLabelData,
-  singleLabelData,
+  customizedMultiHeader,
+  customizedMultiHeaderItem,
+  multiHeader,
+  singleHeader,
+  multiHeaderData,
+  singleHeaderData,
 };

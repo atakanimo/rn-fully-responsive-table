@@ -65,7 +65,7 @@ const ResponsiveTable = (props: TableTypes) => {
         contentContainerStyle={{ flexGrow: 1 }}
       >
         <>
-          {/* // singleLabel */}
+          {/* // singleHeader */}
           {typeOfData &&
             typeOfData === 'string' &&
             dataSource &&
@@ -88,7 +88,7 @@ const ResponsiveTable = (props: TableTypes) => {
                 </Text>
               );
             })}
-          {/* // multiLabel */}
+          {/* // multiHeader */}
           {typeOfData && typeOfData === 'object' && (
             <View>
               {dataSource &&
@@ -152,7 +152,7 @@ const ResponsiveTable = (props: TableTypes) => {
                 ))}
             </View>
           )}
-          {/* // multiLabelHeader>1 */}
+          {/* // multiHeaderHeader>1 */}
           {typeOfData && typeOfData === 'string' && headerLength > 1 && (
             <View>
               {dataSource &&
