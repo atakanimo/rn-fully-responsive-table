@@ -43,33 +43,39 @@ const multiHeaderData = [
 
 ![Alt text](ss/SampleTables.png)
 
-### Types
-
-#### `tableHeight`: number => Height of the table
-
-#### `columnsCustomization`: string[] || columnProperties  => If you want customize the table with color or width <br>, you need the use columnProperties object. If you want a use multiHeader with same styling, you can use like
-
-#### `dataSource`: [] => Data of the table
-
-#### `containerStyle`: ViewStyle (React Native) => Style of the main container
-
-#### `renderOnlyItems`: boolean => Show the table's header area or not. Default is true
-
-#### `tableWidthMultiplier`: number (0.1 to 1) => Width of the table. (Value will multiplier with device width)
-
-#### `colorPalet`: [ColorValue, ColorValue?] => Colors palet to use different color on the table. First color will be used <br> for id == 0 and second color will be used for id == 1, if you want use only one color, you can write one color to color array. Like ["red"]
-
-#### `headerWrapperStyle`: ViewStyle (React Native) => Header Container styles
-
 #### `headerTextStyle`: HeaderTextStyle => Header texts styles
 
 #### `inlineItemStyle`: InlineItemStyle => Values text styles
+
+## Types
+
+Some properties have multiple types.
+Properties marked with an asterisk (`*`) are required.
+
+| Name   | Type    | Description |
+|--------|---------|-------------|
+| `tableHeight` * | `number` | Height of the table. |
+| `columnsCustomization`* | `string[] or columnProperties` | If you want customize the table with color or width, you need the use columnProperties object. |
+| `dataSource` * | `array` | Data of the table |
+| `containerStyle` | `ViewStyle` |  Style of the main container. |
+| `renderOnlyItems`| `boolean` | Show the table's header area or not. Default is true. |
+| `tableWidthMultiplier` | `number (0.1 to 1)` | Width of the table. (Value will multiplier with device width). |
+| `colorPalet` | `[ColorValue, ColorValue?]` | Colors palet to use different color on the table. First color will be used for id == 0 and second color will be used for id == 1, if you want use only one color, you can write one color to color array. Like ["red"] |
+| `headerWrapperStyle` | `ViewStyle` | Header Container styles. |
+| `headerTextStyle` | `HeaderTextStyle` | Header texts styles. |
+| `inlineItemStyle` | `InlineItemStyle` | Values text styles |
 
 ```js
 type columnProperties = {
   header: string;
   width: number;
   valueColor?: ColorValue; // colums value's color.
+};
+
+type BorderStyle = {
+  borderWidth?: number;
+  borderColor?: string;
+  borderStyle?: string;
 };
 
 type HeaderTextStyle = {
