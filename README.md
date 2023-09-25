@@ -39,25 +39,9 @@ const multiHeaderData = [
 // ...
 ```
 
-ScreenShots <br> <br>
+# Screen Shots <br>
+
 ![Alt text](ss/SampleTables.png)
-
-```js
-const customizedMultiHeader = [
-  { header: 'Numbers', width: 2, valueColor: 'red' },
-  { header: 'Words', width: 3, valueColor: 'blue' },
-  { header: 'Test', width: 2.5 },
-  { header: 'Test2', width: 2.5, valueColor: 'green' },
-];
-
-const customizedMultiHeaderItem = [
-  { Numbers: 10, Words: '10', Test: '21', Test2: '8' },
-  { Numbers: 20, Words: '20', Test: '22', Test2: '9' },
-  { Numbers: 30, Words: '20', Test: '23', Test2: '10' },
-  { Numbers: 40, Words: '20', Test: '24', Test2: '11' },
-  { Numbers: 50, Words: '50', Test: '25', Test2: '12' },
-];
-```
 
 ### Types
 
@@ -71,7 +55,7 @@ const customizedMultiHeaderItem = [
 
 #### `renderOnlyItems`: boolean => Show the table's header area or not. Default is true
 
-#### `tableWidthMultiplier`: number (0.1 to 1) => Width of the table. (Value will multipier with device width)
+#### `tableWidthMultiplier`: number (0.1 to 1) => Width of the table. (Value will multiplier with device width)
 
 #### `colorPalet`: [ColorValue, ColorValue?] => Colors palet to use different color on the table. First color will be used <br> for id == 0 and second color will be used for id == 1, if you want use only one color, you can write one color to color array. Like ["red"]
 
